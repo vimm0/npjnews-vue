@@ -3,6 +3,9 @@
         <navbar></navbar>
         <router-view></router-view>
         <foot></foot>
+        <script type="application/javascript" src="/js/jquery/jquery-2.2.4.min.js"></script>
+        <script type="application/javascript" src="/js/plugins/plugins.js"></script>
+        <script type="application/javascript" src="/js/active.js"></script>
     </div>
 </template>
 
@@ -59,5 +62,29 @@
 </script>
 
 <style>
+    a:hover {
+        color: #fff;
+        text-decoration: none;
+    }
 
+    a.post-title {
+        color: #000;
+    }
+
+    a {
+        color: #000;
+    }
+
+    div > a.post-like, div > a.post-comment {
+        color: #828282;
+    }
+
+    div.post-date > a {
+        color: #828282;
+    }
+
+    .nav-title {
+        color: #fff;
+        font-weight: bold;
+    }
 </style>

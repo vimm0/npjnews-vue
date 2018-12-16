@@ -9,10 +9,10 @@
             <div class="top-header-content d-flex align-items-center justify-content-between">
               <!-- Logo -->
               <div class="logo">
-                <router-link to="/">
+                <a href="/">
                   <!--<img src="img/core-img/logo.png" alt="">-->
                   <h2 class="nav-title">Npj News Portal</h2>
-                </router-link>
+                </a>
               </div>
 
               <!-- Login Search Area -->
@@ -65,12 +65,12 @@
               <div class="classynav">
                 <ul>
                   <li class="active">
-                    <router-link to="/">Home</router-link>
+                    <a href="/">Home</a>
                   </li>
                   <li><a href="#">Pages</a>
                     <ul class="dropdown">
                       <li>
-                        <router-link to="/">Home</router-link>
+                        <a href="/">Home</a>
                       </li>
                       <li>
                         <router-link to="/categories-post">Categories</router-link>
@@ -88,7 +88,7 @@
                         <router-link to="#">Dropdown</router-link>
                         <ul class="dropdown">
                           <li>
-                            <router-link to="/">Home</router-link>
+                            <a href="/">Home</a>
                           </li>
                           <li>
                             <router-link to="/categories-post">Categories</router-link>
@@ -111,7 +111,7 @@
                       <ul class="single-mega cn-col-4">
                         <li class="title">Categories</li>
                         <li>
-                          <router-link to="/">Home</router-link>
+                          <a href="/">Home</a>
                         </li>
                         <li>
                           <router-link to="/categories-post">Categories</router-link>
@@ -129,7 +129,7 @@
                       <ul class="single-mega cn-col-4">
                         <li class="title">Categories</li>
                         <li>
-                          <router-link to="/">Home</router-link>
+                          <a href="/">Home</a>
                         </li>
                         <li>
                           <router-link to="/categories-post">Categories</router-link>
@@ -147,7 +147,7 @@
                       <ul class="single-mega cn-col-4">
                         <li class="title">Categories</li>
                         <li>
-                          <router-link to="/">Home</router-link>
+                          <a href="/">Home</a>
                         </li>
                         <li>
                           <router-link to="/categories-post">Categories</router-link>

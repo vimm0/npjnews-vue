@@ -24,6 +24,9 @@ yarn run test
 ```
 yarn run lint
 ```
+### Issues
+- `script` tags are distributed around index.html and app.vue file
+- `anchor` tags are used for home
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

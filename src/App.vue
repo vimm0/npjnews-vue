@@ -3,8 +3,6 @@
         <navbar></navbar>
         <router-view></router-view>
         <foot></foot>
-        <script type="application/javascript" src="/js/jquery/jquery-2.2.4.min.js"></script>
-        <script type="application/javascript" src="/js/plugins/plugins.js"></script>
         <script type="application/javascript" src="/js/active.js"></script>
     </div>
 </template>

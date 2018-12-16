@@ -13,7 +13,8 @@
                                 <ul>
                                     <li v-for="news in this.$store.state.breakingNews">
                                         <router-link
-                                                :to="{name: 'article-slug-id', params: {slug: news.date_url, id: news.id}}">
+                                                :to="{name: 'article-slug-id', params: {slug: news.date_url, id: news.id}}"
+                                                style="color:#000;">
                                             {{ news.title
                                             }}
                                         </router-link>
@@ -31,13 +32,15 @@
                                 <ul>
                                     <li v-for="news in this.$store.state.internationalNews">
                                         <router-link
-                                                :to="{name: 'article-slug-id', params: {slug: news.date_url, id: news.id}}">
+                                                :to="{name: 'article-slug-id', params: {slug: news.date_url, id: news.id}}"
+                                                style="color:#000;">
                                             {{news.title}}
                                         </router-link>
                                     </li>
                                 </ul>
                             </div>
-                        </div>`
+                        </div>
+                        `
                     </div>
 
                     <!-- Hero Add -->

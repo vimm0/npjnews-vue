@@ -1,14 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
 import store from './store'
-// import { sync } from 'vuex-router-sync'
+import { sync } from 'vuex-router-sync'
 
 // These are the routes we're going to create.
 import router from './router.js';
 import Vuex from 'vuex'
 
 Vue.use(Vuex)
-// sync(store, router)
+sync(store, router)
 
 Vue.config.productionTip = false
 

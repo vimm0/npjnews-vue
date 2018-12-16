@@ -11,7 +11,7 @@
                             </div>
                             <div id="breakingNewsTicker" class="ticker">
                                 <ul>
-                                    <li v-for="news in $store.state.breakingNews">
+                                    <li v-for="news in this.$store.state.breakingNews">
                                         <router-link
                                                 :to="{name: 'article-slug-id', params: {slug: news.date_url, id: news.id}}">
                                             {{ news.title
@@ -29,7 +29,7 @@
                             </div>
                             <div id="internationalTicker" class="ticker">
                                 <ul>
-                                    <li v-for="news in $store.state.internationalNews">
+                                    <li v-for="news in this.$store.state.internationalNews">
                                         <router-link
                                                 :to="{name: 'article-slug-id', params: {slug: news.date_url, id: news.id}}">
                                             {{news.title}}
@@ -37,7 +37,7 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </div>`
                     </div>
 
                     <!-- Hero Add -->
@@ -387,10 +387,11 @@
         //     return {article: data, categories: cat.data};
         // },
         created() {
+            let self = this;
             axios.get('article')
                 .then(response => {
-                    this.$store.commit('addArticle', response.data)
-                    this.article = response.data
+                    self.$store.commit('addArticle', response.data)
+                    self.article = response.data
                     console.log(response);
                 })
                 .catch(e => {
@@ -399,8 +400,8 @@
                 })
             axios.get('category')
                 .then(function (response) {
-                    this.$store.commit('addCategories', response.data)
-                    this.categories = response.data
+                    self.$store.commit('addCategories', response.data)
+                    self.categories = response.data
                     console.log(response);
                 })
                 .catch(function (error) {
@@ -408,7 +409,8 @@
                 });
             axios.get('article/?category__slug=international-news')
                 .then(function (response) {
-                    this.$store.commit('addInternationalNews', response.data)
+                    console.log(self)
+                    self.$store.commit('addInternationalNews', response.data)
                     console.log(response);
                 })
                 .catch(function (error) {
@@ -416,7 +418,7 @@
                 });
             axios.get('article/?category__slug=breaking-news')
                 .then(function (response) {
-                    this.$store.commit('addBreakingNews', breakingNews.data)
+                    self.$store.commit('addBreakingNews', response.data)
                     console.log(response);
                 })
                 .catch(function (error) {

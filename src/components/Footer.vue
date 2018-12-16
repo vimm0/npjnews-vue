@@ -11,10 +11,10 @@
             <div class="footer-widget-area mt-80">
               <!-- Footer Logo -->
               <div class="footer-logo">
-                <nuxt-link to="/index">
+                <router-link to="/index">
                   <!--<img src="img/core-img/logo.png" alt="logo">-->
                   <h4 class="widget-title">Npj News Portal</h4>
-                </nuxt-link>
+                </router-link>
               </div>
               <!-- List -->
               <ul class="list">

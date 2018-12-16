@@ -9,10 +9,10 @@
             <div class="top-header-content d-flex align-items-center justify-content-between">
               <!-- Logo -->
               <div class="logo">
-                <nuxt-link to="/">
+                <router-link to="/">
                   <!--<img src="img/core-img/logo.png" alt="">-->
                   <h2 class="nav-title">Npj News Portal</h2>
-                </nuxt-link>
+                </router-link>
               </div>
 
               <!-- Login Search Area -->
@@ -45,7 +45,7 @@
 
             <!-- Logo -->
             <div class="logo">
-              <nuxt-link to="/"><img src="img/core-img/logo.png" alt=""></nuxt-link>
+              <router-link to="/"><img src="img/core-img/logo.png" alt=""></router-link>
             </div>
 
             <!-- Navbar Toggler -->
@@ -65,42 +65,42 @@
               <div class="classynav">
                 <ul>
                   <li class="active">
-                    <nuxt-link to="/">Home</nuxt-link>
+                    <router-link to="/">Home</router-link>
                   </li>
                   <li><a href="#">Pages</a>
                     <ul class="dropdown">
                       <li>
-                        <nuxt-link to="/">Home</nuxt-link>
+                        <router-link to="/">Home</router-link>
                       </li>
                       <li>
-                        <nuxt-link to="/categories-post">Categories</nuxt-link>
+                        <router-link to="/categories-post">Categories</router-link>
                       </li>
                       <li>
-                        <nuxt-link to="/single-post">Single Articles</nuxt-link>
+                        <router-link to="/single-post">Single Articles</router-link>
                       </li>
                       <li>
-                        <nuxt-link to="/about">About Us</nuxt-link>
+                        <router-link to="/about">About Us</router-link>
                       </li>
                       <li>
-                        <nuxt-link to="/contact">Contact</nuxt-link>
+                        <router-link to="/contact">Contact</router-link>
                       </li>
                       <li>
-                        <nuxt-link to="#">Dropdown</nuxt-link>
+                        <router-link to="#">Dropdown</router-link>
                         <ul class="dropdown">
                           <li>
-                            <nuxt-link to="/">Home</nuxt-link>
+                            <router-link to="/">Home</router-link>
                           </li>
                           <li>
-                            <nuxt-link to="/categories-post">Categories</nuxt-link>
+                            <router-link to="/categories-post">Categories</router-link>
                           </li>
                           <li>
-                            <nuxt-link to="/single-post">Single Articles</nuxt-link>
+                            <router-link to="/single-post">Single Articles</router-link>
                           </li>
                           <li>
-                            <nuxt-link to="/about">About Us</nuxt-link>
+                            <router-link to="/about">About Us</router-link>
                           </li>
                           <li>
-                            <nuxt-link to="/contact">Contact</nuxt-link>
+                            <router-link to="/contact">Contact</router-link>
                           </li>
                         </ul>
                       </li>
@@ -111,55 +111,55 @@
                       <ul class="single-mega cn-col-4">
                         <li class="title">Categories</li>
                         <li>
-                          <nuxt-link to="/">Home</nuxt-link>
+                          <router-link to="/">Home</router-link>
                         </li>
                         <li>
-                          <nuxt-link to="/categories-post">Categories</nuxt-link>
+                          <router-link to="/categories-post">Categories</router-link>
                         </li>
                         <li>
-                          <nuxt-link to="/single-post">Single Articles</nuxt-link>
+                          <router-link to="/single-post">Single Articles</router-link>
                         </li>
                         <li>
-                          <nuxt-link to="/about">About Us</nuxt-link>
+                          <router-link to="/about">About Us</router-link>
                         </li>
                         <li>
-                          <nuxt-link to="/contact">Contact</nuxt-link>
-                        </li>
-                      </ul>
-                      <ul class="single-mega cn-col-4">
-                        <li class="title">Categories</li>
-                        <li>
-                          <nuxt-link to="/">Home</nuxt-link>
-                        </li>
-                        <li>
-                          <nuxt-link to="/categories-post">Categories</nuxt-link>
-                        </li>
-                        <li>
-                          <nuxt-link to="/single-post">Single Articles</nuxt-link>
-                        </li>
-                        <li>
-                          <nuxt-link to="/about">About Us</nuxt-link>
-                        </li>
-                        <li>
-                          <nuxt-link to="/contact">Contact</nuxt-link>
+                          <router-link to="/contact">Contact</router-link>
                         </li>
                       </ul>
                       <ul class="single-mega cn-col-4">
                         <li class="title">Categories</li>
                         <li>
-                          <nuxt-link to="/">Home</nuxt-link>
+                          <router-link to="/">Home</router-link>
                         </li>
                         <li>
-                          <nuxt-link to="/categories-post">Categories</nuxt-link>
+                          <router-link to="/categories-post">Categories</router-link>
                         </li>
                         <li>
-                          <nuxt-link to="/single-post">Single Articles</nuxt-link>
+                          <router-link to="/single-post">Single Articles</router-link>
                         </li>
                         <li>
-                          <nuxt-link to="/about">About Us</nuxt-link>
+                          <router-link to="/about">About Us</router-link>
                         </li>
                         <li>
-                          <nuxt-link to="/contact">Contact</nuxt-link>
+                          <router-link to="/contact">Contact</router-link>
+                        </li>
+                      </ul>
+                      <ul class="single-mega cn-col-4">
+                        <li class="title">Categories</li>
+                        <li>
+                          <router-link to="/">Home</router-link>
+                        </li>
+                        <li>
+                          <router-link to="/categories-post">Categories</router-link>
+                        </li>
+                        <li>
+                          <router-link to="/single-post">Single Articles</router-link>
+                        </li>
+                        <li>
+                          <router-link to="/about">About Us</router-link>
+                        </li>
+                        <li>
+                          <router-link to="/contact">Contact</router-link>
                         </li>
                       </ul>
                       <div class="single-mega cn-col-4">
@@ -198,10 +198,10 @@
                     </div>
                   </li>
                   <li v-for="cat in $store.state.categories">
-                    <nuxt-link :to="{name: 'category-slug', params: {slug: cat.slug}}">{{ cat.title }}</nuxt-link>
+                    <router-link :to="{name: 'category-slug', params: {slug: cat.slug}}">{{ cat.title }}</router-link>
                   </li>
                   <li>
-                    <nuxt-link to="/contact">Contact</nuxt-link>
+                    <router-link to="/contact">Contact</router-link>
                   </li>
                 </ul>
 

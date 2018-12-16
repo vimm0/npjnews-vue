@@ -1,15 +1,23 @@
 <template>
     <div id="app">
+        <navbar></navbar>
         <router-view></router-view>
+        <foot></foot>
     </div>
 </template>
 
 <script>
     // import Vue from 'vue'
     import axios from 'axios'
+    import Navbar from '@/components/Navbar.vue'
+    import Footer from '@/components/Footer.vue'
 
     export default {
         name: 'app',
+        components: {
+            Navbar,
+            'foot': Footer,
+        },
         created() {
             axios.defaults.baseURL = 'http://localhost:8000';
             // axios.defaults.headers['Access-Control-Allow-Origin'] = `*`

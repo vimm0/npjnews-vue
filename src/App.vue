@@ -61,8 +61,8 @@
 
 <style>
     a:hover {
-        color: #fff;
-        text-decoration: none;
+        color: #ee002d;
+        text-decoration: none !important;
     }
 
     a.post-title {

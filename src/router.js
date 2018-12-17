@@ -21,17 +21,17 @@ const router = new Router({
             component: Home,
         },
         {
-            path: 'article/:slug?/:id?',
+            path: '/article/:slug?/:id?',
             name: 'article-slug-id',
             component: Article,
         },
         {
-            path: 'category/:slug?',
+            path: '/category/:slug?',
             name: 'category-slug',
             component: Category,
         },
         {
-            path: 'reporter/:slug?',
+            path: '/reporter/:slug?',
             name: 'reporter-slug',
             component: Reporter,
         },

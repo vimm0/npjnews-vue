@@ -27,6 +27,7 @@ yarn run lint
 ### Issues
 - `script` tags are distributed around index.html and app.vue file
 - `anchor` tags are used for home
+- eliminating <%= BASE_URL %> produce problem in image render on route change
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

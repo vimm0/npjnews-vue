@@ -14,8 +14,8 @@
                                 </div>
                                 <div class="post-data">
                                     <router-link :to="{name: 'category-slug', params: {slug: cat.slug}}"
-                                               class="post-catagory"
-                                               v-for="cat in article.category" :key="cat.slug">{{cat.title}}
+                                                 class="post-catagory"
+                                                 v-for="cat in article.category" :key="cat.slug">{{cat.title}}
                                     </router-link>
                                     <router-link
                                             :to="{name: 'article-slug-id', params: {slug: article.date_url, id: article.id}}"
@@ -90,7 +90,7 @@
         // },
         created() {
             let self = this;
-            axios.get('article/?category__slug=' + self.params.slug)
+            axios.get('article/?category__slug=' + self.$route.params.slug)
                 .then(response => {
                     self.articles = response.data
                     console.log(response);
@@ -99,7 +99,7 @@
                     console.log(error);
                     // this.errors.push(e)
                 })
-            axios.get('category/' + self.params.slug)
+            axios.get('category/' + self.$route.params.slug)
                 .then(response => {
                     self.category = response.data
                     console.log(response);
@@ -109,5 +109,26 @@
                     // this.errors.push(e)
                 })
         },
+        // mounted() {
+        //     let self = this;
+        //     axios.get('article/?category__slug=' + self.$route.params.slug)
+        //         .then(response => {
+        //             self.articles = response.data
+        //             console.log(response);
+        //         })
+        //         .catch(e => {
+        //             console.log(error);
+        //             // this.errors.push(e)
+        //         })
+        //     axios.get('category/' + self.$route.params.slug)
+        //         .then(response => {
+        //             self.category = response.data
+        //             console.log(response);
+        //         })
+        //         .catch(e => {
+        //             console.log(error);
+        //             // this.errors.push(e)
+        //         })
+        // }
     }
 </script>

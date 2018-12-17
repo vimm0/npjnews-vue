@@ -13,7 +13,7 @@ import Contact from './components/Contact.vue'
 Vue.use(Router)
 
 const router = new Router({
-    mode: 'history',
+    // mode: 'history',
     routes: [
         {
             path: '/',

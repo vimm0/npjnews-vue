@@ -197,7 +197,7 @@
                       </div>
                     </div>
                   </li>
-                  <li v-for="cat in $store.state.categories">
+                  <li v-for="cat in $store.state.categories" :key="cat.slug">
                     <router-link :to="{name: 'category-slug', params: {slug: cat.slug}}">{{ cat.title }}</router-link>
                   </li>
                   <li>
